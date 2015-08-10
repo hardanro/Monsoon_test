@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Monsoon_Test>
+            <version>0.0.1</version>
+        </Monsoon_Test>
+    </modules>
+
+    <frontend>
+        <events>
+            <page_block_html_topmenu_gethtml_before>
+                <observers>
+                    <monsoon_test>
+                        <type>model</type>
+                        <class>Monsoon_Test_Model_Observer</class>
+                        <method>customizeTopMenu</method>
+                    </monsoon_test>
+                </observers>
+            </page_block_html_topmenu_gethtml_before>
+        </events>
+    </frontend>
+    <global>
+        <resources>
+            <monsoontest_setup>
+                <setup>
+                    <module>Monsoon_Test</module>
+                    <class>Monsoon_Test_Model_Resource_Setup</class>
+                </setup>
+                <connection>
+                    <use>default_setup</use>
+                </connection>
+            </monsoontest_setup>
+            <monsoontest_setup_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </monsoontest_setup_read>
+            <monsoontest_setup_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </monsoontest_setup_write>
+        </resources>
+    </global>
+</config>

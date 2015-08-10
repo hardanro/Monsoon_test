@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Monsoon_Test>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Monsoon_Test>
+    </modules>
+</config>

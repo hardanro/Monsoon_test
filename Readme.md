@@ -1,0 +1,1 @@
+Magento module that allows certain categories to be unclickable in the main navigation menu.
